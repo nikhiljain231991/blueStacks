@@ -1,0 +1,123 @@
+<div class="primaryColorLarge">
+		
+</div>
+
+<div class="glyphicon glyphicon-arrow-left backButon" onclick="window.history.go(-1)"></div>
+
+
+<div class="containerProfile">
+	<div class="headContainer">
+		<div class="name">
+			{{userName}}
+		</div>
+		<div class="exp">
+			<i>Partner since {{partner_since}} &nbsp;( Status : {{status_now}} )</i>
+		</div>
+	</div>
+	<div class="circleLarge" style="background-image:url('{{image}}')">
+				
+	</div>
+	<div style="clear: both"></div>
+	<div class="spacer"></div>
+	<div class="progressContainer">
+		<div class="left">
+			{{year_calculated}} Total Spend
+		</div>
+		<div class="right">
+			<div class="progress">
+				<span ng-if="percentEarn<25">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="{{percentEarn}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentEarn}}%">
+				    ${{year_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentEarn>=25 && percentEarn<50">
+			       <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="{{percentEarn}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentEarn}}%">
+				    ${{year_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentEarn>=50 && percentEarn<75">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="{{percentEarn}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentEarn}}%">
+				    ${{year_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentEarn>=75">
+			       <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="{{percentEarn}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:({{percentEarn}})%">
+				    ${{year_wise_usage}}
+				 	</div>
+			    </span>
+				<div class="totalValue">${{total}}</div>
+			</div>
+			<div class="medalContainer">
+				<div class="medal" style="background-image:url('assets/Level{{status_now}}.svg');margin-left:{{percentBadge}}%">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="progressContainer">
+		<div class="left">
+			<div class="glyphicon glyphicon-floppy-disk sizeImage"></div>
+			<div class="textFormat">Storage Used</div>
+		</div>
+		<div class="right">
+			<div class="progress">
+				<span ng-if="percentStorage<25">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="{{percentStorage}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentStorage}}%">
+				    ${{storage_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentStorage>=25 && percentStorage<50">
+			       <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="{{percentStorage}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentStorage}}%">
+				    ${{storage_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentStorage>=50 && percentStorage<75">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="{{percentStorage}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentStorage}}%">
+				    ${{storage_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentStorage>=75">
+			       <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="{{percentStorage}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentStorage}}%">
+				    ${{storage_wise_usage}}
+				 	</div>
+			    </span>
+			    <div class="totalValue">${{halfOfTotal}}</div>
+			  </div> 
+		</div>
+	</div>
+	<div class="progressContainer">
+		<div class="left">
+			<div class="glyphicon glyphicon-cloud-download sizeImage"></div>
+			<div class="textFormat">Server Usage</div>
+		</div>
+		<div class="right">
+			<div class="progress">
+				<span ng-if="percentServer<25">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="{{percentServer}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentServer}}%">
+				    ${{server_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentServer>=25 && percentServer<50">
+			       <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="{{percentServer}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentServer}}%">
+				    ${{server_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentServer>=50 && percentServer<75">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="{{percentServer}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentServer}}%">
+				    ${{server_wise_usage}}
+				 	</div>
+			    </span>
+			    <span ng-if="percentServer>=75">
+			       <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="{{percentServer}}" aria-valuemin="0" aria-valuemax="100" style="height:25px;width:{{percentServer}}%">
+				    ${{server_wise_usage}}
+				 	</div>
+			    </span>
+			    <div class="totalValue">${{halfOfTotal}}</div>
+			 </div>
+		</div>
+	</div>
+	
+	
+	
+	
+</div>

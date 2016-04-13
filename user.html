@@ -1,0 +1,29 @@
+<div class="primaryColor">
+		
+</div>
+
+
+<div class="container">
+	
+	
+	
+	<div class="header">
+		<h2>BlueStacks Users</h2>
+	</div>
+	
+	<div class="subHeader">
+		<i>Please select any user:</i>
+	</div>
+	
+	<div class="userContainer">
+		<div  ng-repeat="user in usersArray" class="userBox">
+			<a href="#profile/{{user[0]}}"><div class="circle" style="background-image:url('{{user[1]}}')">
+				
+			</div>
+			<div class="textBox">
+				<i>{{user[0]}}</i>
+			</div></a>
+		</div>
+	</div>
+	
+</div>

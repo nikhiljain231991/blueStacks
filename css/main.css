@@ -1,0 +1,262 @@
+.container{
+	position: relative;
+	margin: 1%;
+	padding: 20px;
+	padding-top: 15px;
+	float: left;
+	width: 99%;
+}
+.containerProfile{
+	position: relative;
+    margin: 6%;
+    padding: 20px;
+    padding-top: 0px;
+    float: left;
+    width: 85%;
+    margin-top: 3%;
+}
+
+
+.header{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	margin-top: 0px;
+	vertical-align: middle;
+	font-weight: bold;
+	color :#DCD9D9;
+	float: left;
+}
+
+.subHeader{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 2.2em;
+	vertical-align: middle;
+	color :#DCD9D9;
+	float: left;
+}
+
+.circle {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 5px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+  float: left;
+}
+
+.circleLarge {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: 14%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+  float: left;
+}
+
+.totalValue{
+	color : black;
+	font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.headContainer{
+	position: relative;
+	width: 50%;
+	margin-left: 11%;
+	margin-top: 35px;
+	height: 70px;
+	float: left;
+}
+
+.medalContainer{
+	width: 100%;
+	height: 50px;
+}
+
+.sizeImage{
+	font-size: 2.2em;
+	float: left;
+}
+
+.textFormat{
+	float: left;
+	margin-top: 2%;
+	margin-left: 10px;
+}
+
+.medal{
+	width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    margin-top: -8px;
+    margin-left: 3%;
+}
+
+.name{
+	position: relative;
+    width: 100%;
+    font-size: 4.5em;
+    margin-left: 2%;
+	font-weight: bold;
+	color :#DCD9D9;
+	float: none;
+	text-transform: capitalize;
+}
+
+.exp{
+	position: relative;
+    text-align: center;
+    margin-top :  5px;
+    margin-left: 2%;
+    height: 60px;
+    font-size: 2.2em;
+	font-weight: bold;
+	color :#DCD9D9;
+	float: left;
+	text-transform: capitalize;
+}
+
+.textBox{
+	position: relative;
+	text-transform: capitalize;
+	font-size: 3.5em;
+	font-weight: bold;
+	height: 100px;
+	line-height: 100px;
+	width: 250px;
+	text-align: center;
+	color: black;
+	vertical-align: middle;
+	float: left;
+}
+
+.userContainer{
+	position: relative;
+	margin: 5%;
+	width: 90%;
+	padding: 13%;
+	padding-right: 2%;
+	padding-top: 5%;
+}
+
+.userBox{
+	width: 450px;
+	margin: 10px;
+	float: left;
+	height: 100px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	animation: fadeIn 1s both ease-in;
+}
+
+.userBox:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.primaryColor{
+	position: absolute;
+	height: 150px;
+	width: 100%;
+	background-color: #226666;
+}
+
+.primaryColorLarge{
+	position: absolute;
+	height: 180px;
+	width: 100%;
+	background-color: #226666;
+}
+
+.backButon{
+	position: absolute;
+	margin: 5%;
+	color: #DCD9D9;
+	font-size: 5em;
+	cursor: pointer;
+	z-index: 100000;
+}
+
+.progressContainer{
+	width: 100%;
+	height: 100px;
+	margin: 1%;
+	padding: 1%;
+	margin-left: 11%;
+	animation: fadeIn 1s both ease-in;
+
+}
+
+.spacer{
+	width: 100%;
+	height: 50px;
+}
+
+.left{
+	font-size: 2.8em;
+	color: #12AFA9;
+	width: 35%;
+	float: left;
+}
+
+.right{
+	width: 47%;
+	float: left;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .userContainer {
+        margin-top: 18%;
+    }
+     .headContainer {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+     .headContainer {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	.userContainer {
+        margin-top: 28%;
+        margin-left: 0%;
+    }
+      .headContainer {
+        width: 80%;
+    }
+    .primaryColorLarge{
+		height:150px;
+	}
+    .circleLarge{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+    
+}
